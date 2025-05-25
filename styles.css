@@ -372,6 +372,61 @@ p {
 
 
 /* Aerospace Projects - Horizontal Cards with Images */
+.aero-projects {
+  background: transparent !important;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.aero-projects h2 {
+  color: #00FFFF; /* Cyan */
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  text-align: center;
+  font-size: 36px;
+}
+
+.aero-project-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.aero-project-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.aero-project-card:hover {
+  transform: translateY(-10px);
+}
+
+.aero-project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.aero-project-card h3 {
+  font-size: 1.2rem;
+  color: #004080;
+  margin-bottom: 0.8rem;
+}
+
+.aero-project-card a {
+  color: #007acc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.aero-project-card a:hover {
+  text-decoration: underline;
+}
+
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -428,6 +483,7 @@ p {
 .project-card a:hover {
   text-decoration: underline;
 }
+
 
 /* Technical Projects - Horizontal Cards with Images */
 .tech-projects .project-grid {
