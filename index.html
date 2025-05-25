@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onkar Kalra | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="content">
+      <div class="text">
+        <h1>Hi, I'm Onkar Kalra</h1>
+        <div class="dynamic-text">
+          <span class="prefix">I am a </span>
+          </span> <span class="text rotating-text"></span>
+        </div>
+
+       
+        <script>
+  const words = ["Aerospace Engineer", "CAD Designer","Swimmer","Aspirant MS Student"];
+  let wordIndex = 0;
+  let charIndex = 0;
+  const typingElement = document.querySelector(".rotating-text");
+
+  function type() {
+    if (charIndex < words[wordIndex].length) {
+      typingElement.textContent += words[wordIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, 100);
+    } else {
+      setTimeout(erase, 2000);
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      typingElement.textContent = words[wordIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(erase, 50);
+    } else {
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(type, 500);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typingElement) {
+      setTimeout(type, 1000);
+    }
+  });
+</script>
+
+        <a href="#experience" class="btn">View My Work</a>
+      </div>
+      <div class="image">
+        <img src="Profile pic.jpg" alt="Onkar Kalra" class="main-photo" />
+      </div>
+    </div>
+  </section>
+  
+<!-- Add this code inside your body tag -->
+<div class="rocket-container">
+  <div class="rocket"></div>
+  <div class="smoke"></div>
+  <div class="smoke"></div>
+  <div class="smoke"></div>
+</div>
+
+<div class="stars"></div>
+<div class="meteor-shower">
+  <div class="meteor"></div>
+  <div class="meteor delay1"></div>
+</div>
+
+<!-- Planet Animation Container -->
+<div class="planets-container">
+  <img src="P1.png" alt="Earth" class="planet planet1" />
+  <img src="P2.png" alt="Mars" class="planet planet2" />
+  <img src="P3.jpg" alt="Jupiter" class="planet planet3" />
+  <img src="P4.png" alt="Saturn" class="planet planet4" />
+  <div class="saturn-ring"></div>
+</div>
+
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="content">
+      <div class="text">
+        <h2>About Me</h2>
+        <p>I’m Onkar Kalra, an enthusiastic Aerospace Engineering student with a strong passion for aircraft design, aerodynamics, and advanced flight systems. I’ve gained hands-on experience through internships at leading institutions such as HAL (ARDC) and STAR, where I worked on control law development, CFD analysis, and structural design. My portfolio features CAD models of a Boeing 737, a missile concept, and a UAV, as well as a published research paper on UAV power optimization. With over 160 certifications, 50+ medals, and 14+ individual trophies, I bring a proven track record of excellence, leadership, and innovation. I’m driven to advance aerospace technology through research, practical application, and continuous learning.</p>
+      </div>
+    </div>
+  </section>
+
+ <section class="skills">
+  <h2>Skills</h2>
+  
+  <!-- Technical Skills Section -->
+  <div class="skill-category">
+    <h3>Technical Skills</h3>
+    <div class="skill-tags">
+      <span>Autodesk Fusion 360</span>
+      <span>SolidWorks</span>
+      <span>CAD Design</span>
+      <span>Ansys</span>
+      <span>HTML</span>
+      <span>Python</span>
+      <span>JavaScript</span>
+      <span>MATLAB</span>
+      <!-- Add more technical skills as needed -->
+    </div>
+  </div>
+
+  <!-- Professional Skills Section -->
+  <div class="skill-category">
+    <h3>Professional Skills</h3>
+    <div class="skill-tags">
+      <span>Project Management</span>
+      <span>Design Thinking</span>
+      <span>Team Leadership</span>
+      <span>Communication</span>
+      <span>Problem Solving</span>
+      <span>Time Management</span>
+      <span>Collaboration</span>
+      <!-- Add more professional skills as needed -->
+    </div>
+  </div>
+</section>
+
+
+   <!-- Work Experience -->
+  <section id="experience" class="experience">
+    <h2>Work Experience</h2>
+    <div class="project">
+      <h3><a href="https://drive.google.com/file/d/1JmgHD1UgUWXGb1H9ghEbKUqQ7UVcR4CF/view?usp=sharing" target="_blank">Aircraft Research and Design Centre (ARDC), HAL, Bangalore</a></h3>
+      <p>Intern (2024) - Conducted research on control laws, explored FCS, structural design, armament systems, and produced a 10,000+ word report.</p>
+    </div>
+    <div class="project">
+      <h3><a href="https://drive.google.com/file/d/1kbfOfPHDncZEQi6tA32AWuHvK8tzRs5Q/view?usp=sharing" target="_blank">Star Space Technology & Aeronautical Rocketry, Surat</a></h3>
+      <p>Intern - Satellite Design (2023) - Led a 6-member team to design a working 1U CubeSat using Fusion 360 and achieved 3D model output.</p>
+    </div>
+  </section>
+
+ <!-- Research Work Section -->
+<!-- Research Work Section -->
+<section id="research">
+  <h2>Research Work</h2>
+
+  <!-- Research Paper -->
+  <div class="research">
+    <div class="research-item">
+      <div class="research-text">
+      <h3><a href="https://drive.google.com/file/d/19NKp6NW-FMI3O77_NuZlvN-fBtvkfcnZ/view?usp=sharing" target="_blank">Analytical Approach for the Optimal Power Consumption for an Unmanned Aerial System for Military Surveillance and Mapping</a></h3>
+      <p>Presented at the International Conference on Sustainable Aerospace Technologies. Conducted rotor aerodynamic analysis using ANSYS, implemented control strategies in MATLAB Simulink, and integrated real-time data acquisition systems.</p>
+    </div>
+    <div class="research-image">
+      <img src="research image.png" alt="Research Paper Image">
+    </div>
+  </div>
+
+  <!-- Capstone Project -->
+  <div class="research-item">
+    <div class="research-text">
+      <h3><a href="https://drive.google.com/file/d/13wwonRS3WrUhgdqi5wJfnea0Ydrqkgu4/view?usp=sharing" target="_blank">Capstone Project: Aerodynamic Analysis of NACA 4412 Airfoil</a></h3>
+      <p>Conducted a detailed aerodynamic analysis using flow separation control techniques on the NACA 4412 airfoil with CFD simulation in ANSYS Fluent. Evaluated suction slot effects on lift, drag, and separation behavior.</p>
+    </div>
+    <div class="research-image">
+      <img src="capstone-image.png" alt="Capstone Project Image">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Technical Projects -->
+<section id="technical-projects" class="tech-projects">
+  <h2>Technical Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3><a href="https://drive.google.com/file/d/1g9FaBOD_cQRGxym2wudNwsbCUVxay3Pg/view?usp=sharing" target="_blank">Symptom-Based Disease Prediction & Doctor Allocation System</a></h3>
+      <p>Developed a web-based system to predict diseases based on user symptoms using Python and ML models, and automatically allocate relevant doctors from the hospital database. The solution aimed to improve early diagnosis and streamline healthcare access. This EPICS project was carried out under VIT Bhopal's social innovation initiative.</p>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://weather-api-blond-sigma.vercel.app/" target="_blank">Weather App</a></h3>
+      <p>A feature-rich, dynamic weather forecasting application designed to deliver accurate, real-time weather information using live API data. Users can search for any location to receive personalized, location-based forecasts including current conditions, hourly and weekly outlooks, and weather alerts. The application features a fully responsive and intuitive user interface, ensuring seamless usability across all devices and screen sizes. Built with modern web technologies, it offers fast performance, clean design, and an engaging user experience.</p>
+    </div>
+  </div>
+</section>
+  <!-- Training -->
+<section id="training" class="training">
+  <h2>Training</h2>
+
+  <div class="project">
+    <h3>Indian Space Research Organization (ISRO), Bhopal (2023)</h3>
+    <p><strong>Role:</strong> Space Science & Technology Awareness Trainee - Online</p>
+    <p>
+      Immersed in an intensive space science program encompassing Astronomy, Astrophysics, Sun-Earth interactions, and Aeronomy Instrumentation, mentored by leading scientists from ISRO centers and top Indian academic institutions.
+    </p>
+    <a href="https://drive.google.com/file/d/1sVgbTb0orhf81bJ_3AC909uc57GES4m3/view?usp=sharing" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="project">
+    <h3>Aero Innovation And Skill Centre (AISC), Bangalore (2023)</h3>
+    <p><strong>Program:</strong> Internship at AISC C/o. The Aeronautical Society of India</p>
+    <p>
+      Complied with safety regulations and completed over 50 hours of professional development through hands-on experience and training in the aerospace industry, also improved teamwork and communication abilities.
+    </p>
+    <a href="https://drive.google.com/file/d/1y7NJBTo0zntXgKJlUet2hdmeWjygqgXW/view?usp=sharing" target="_blank">View Certificate</a>
+  </div>
+</section>
+
+
+<!-- Certification -->
+  <section id="certifications" class="py-16 px-6 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 text-white">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">Certifications</h2>
+    <ul class="space-y-6 text-lg list-disc list-inside">
+
+      <li>
+        <i class="fas fa-microscope" style="color:#ffffff; margin-right: 8px;"></i>
+        Attended the <strong>International Radiobiology Conference</strong> by INMA, DRDO...
+        <a href="https://drive.google.com/file/d/1fna-kLjN9EfdMMNg_0J8602HMs8uWmBP/view?usp=sharing" target="_blank">[View Certificate]</a>
+      </li>
+
+      <li>
+        <i class="fas fa-university" style="color:#ffffff; margin-right: 8px;"></i>
+        Completed the <strong>Digitalisation in the Aerospace Industry</strong> – TUM via Coursera.
+        <a href="https://drive.google.com/file/d/1bYVnKGr83Js6ElOtWOkk-mRE_OHs0Odl/view?usp=sharing" target="_blank">[View Certificate]</a>
+      </li>
+
+      <li>
+        <i class="fas fa-wind" style="color:#ffffff; margin-right: 8px;"></i>
+        <strong>Wind Energy Certification</strong> – Technical University of Denmark.
+        <a href="https://drive.google.com/file/d/1DqlGoDuiIVeQw-WFQanFVlqY8fky7CGG/view?usp=sharing" target="_blank">[View Certificate]</a>
+      </li>
+
+      <li>
+        <i class="fas fa-cogs" style="color:#ffffff; margin-right: 8px;"></i>
+        <strong>Ansys Workbench</strong> – Udemy certification.
+        <a href="https://drive.google.com/file/d/1X61bQPX6l8UnI2U7KEeJBuRu7vp-IFe4/view?usp=sharing" target="_blank">[View Certificate]</a>
+      </li>
+
+      <li>
+        <i class="fas fa-cube" style="color:#ffffff; margin-right: 8px;"></i>
+        <strong>CSWA – SolidWorks Associate</strong> – 5.5-hr Udemy CAD course.
+        <a href="https://drive.google.com/file/d/1lvVC_38hxMqE5suWxdEdJNKUcVA4OJwu/view?usp=sharing" target="_blank">[View Certificate]</a>
+      </li>
+
+      <li>
+        <i class="fas fa-chart-line" style="color:#ffffff; margin-right: 8px;"></i>
+        <strong>Product Management 101</strong> – Strategy, lifecycle, and market analysis.
+        <a href="https://drive.google.com/file/d/19B9mkrSHnesapIw9lBG7LUanHY1pbQ4I/view?usp=sharing" target="_blank">[View Certificate]</a>
+      </li>
+
+      <li>
+        <i class="fas fa-rocket" style="color:#ffffff; margin-right: 8px;"></i>
+        <strong>Rocket Masterclass</strong> – Star Space Technology & Aeronautical Rocketry.
+        <a href="#" target="_blank">[View Certificate]</a>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Extracurricular Activities -->
+  <section id="extracurricular" class="extracurricular">
+    <h2>Extracurricular Activities</h2>
+    <ul class="extra-list">
+      <li><i class="fas fa-swimmer"></i> <strong>National-level swimmer:</strong> 50+ medals</li>
+<li><i class="fas fa-heartbeat"></i> <strong>Core Member:</strong> Health-O-Tech Club</li>
+<li><i class="fas fa-lightbulb"></i> <strong>Design Lead:</strong> Entrepreneurship Cell
+
+        <ul>
+          
+          <li>Led 4-member team for event design and promotions.</li>
+          <li>Managed flagship event with 1500+ participants.</li>
+          <li>Collaborated cross-functionally to boost visibility and engagement.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" style="background: linear-gradient(to right, #0f172a, #1e293b); color: white; padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+
+    <!-- Left: Contact Info -->
+    <div style="flex: 1; min-width: 250px;">
+      <h2 style="font-size: 32px; margin-bottom: 20px; color: #38bdf8;">Get in Touch</h2>
+      <p style="margin-bottom: 20px; font-size: 18px;">Feel free to reach out for collaborations, opportunities, or just to connect!</p>
+      <ul style="list-style: none; padding: 0; font-size: 16px;">
+        <li style="margin-bottom: 10px;"><i class="fas fa-envelope" style="color:#ffffff; margin-right: 10px;"></i><a href="mailto:onkarkalra2k4@gmail.com" style="color: #7dd3fc;">onkarkalra2k4@gmail.com</a></li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-phone" style="color:#ffffff; margin-right: 10px;"></i><span style="color: #7dd3fc;">+91-8059400229, +91-9653598555</span></li>
+        <li style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="color:#ffffff; margin-right: 10px;"></i><span style="color: #7dd3fc;">India</span></li>
+        <li style="margin-bottom: 10px;"><i class="fab fa-linkedin" style="color:#ffffff; margin-right: 10px;"></i><a href="https://www.linkedin.com/in/onkar-kalra/" style="color: #7dd3fc;" target="_blank">linkedin.com/in/onkarkalra</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Image -->
+    <div style="flex: 0 0 120px; display: flex; justify-content: flex-end; margin-top: 20px;">
+      <img src="Profile pic.jpg" alt="Onkar Kalra"
+        style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;
+               box-shadow: 0 4px 12px rgba(0,0,0,0.2); animation: float 3s ease-in-out infinite;">
+    </div>
+
+  </div>
+</section>
+
